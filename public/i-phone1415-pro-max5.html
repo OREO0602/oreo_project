@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./i-phone1415-pro-max5.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+  </head>
+  <body>
+    <div class="iphone-14-15-pro-max-5">
+      <img
+        class="formkitarrowleft-icon1"
+        loading="lazy"
+        alt="Back"
+        src="./formkitarrowleft.svg"
+        id="formkitarrowleftIcon"
+      />
+
+  
+      <section class="chart-row">
+      
+        <div class="left-pane">
+          <section class="iphone-14-15-pro-max-5-inner">
+            <div class="rating-details-parent">
+              <div class="rating-details">
+                <h1 class="relaxed-rating">Relaxed rating</h1>
+              </div>
+              <div class="etpiechart-parent">
+                <img class="etpiechart-icon" loading="lazy" alt="Relaxed rating pie chart" src="./etpiechart.svg"/>
+                <div class="interaction-icons">
+                  <div class="interaction" aria-hidden="true">
+                    <img class="mdilike-icon"   loading="lazy" alt="Like"    src="./mdilike.svg"/>
+                    <img class="mdidislike-icon" loading="lazy" alt="Dislike" src="./mdidislike.svg"/>
+                  </div>
+                </div>
+                <div class="sentiment-label">
+                  <div class="like-dislike">
+                    <p class="like">Like</p>
+                    <p class="like">Dislike</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+       
+        <div class="right-pane">
+          <section class="mood-bar-wrapper">
+            <div class="mood-bar">
+              <div class="mood-swings">Mood swings</div>
+              <img class="mdichart-bar-icon" loading="lazy" alt="Mood swings bar chart" src="./mdichartbar.svg"/>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var formkitarrowleftIcon = document.getElementById("formkitarrowleftIcon");
+      if (formkitarrowleftIcon) {
+        formkitarrowleftIcon.addEventListener("click", function () {
+          window.location.href = "./i-phone1415-pro-max4.html";
+        });
+      }
+    </script>
+  </body>
+</html>

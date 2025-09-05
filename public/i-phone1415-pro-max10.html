@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./i-phone1415-pro-max10.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="iphone-14-15-pro-max-10">
+      <img
+        class="formkitarrowleft-icon6"
+        loading="lazy"
+        alt=""
+        src="./formkitarrowleft.svg"
+        id="formkitarrowleftIcon"
+      />
+
+      <section class="empty">
+        <div class="mood-input1">
+          <div class="material-symbolssentiment-str-wrapper">
+            <img
+              class="material-symbolssentiment-str-icon1"
+              loading="lazy"
+              alt=""
+              src="./materialsymbolssentimentstressedoutline1.svg"
+            />
+          </div>
+
+          
+
+                  <textarea
+  class="mood-input-inner"
+  placeholder="Please enter your mood..."
+  rows="8"
+  cols="20"
+></textarea>
+
+         
+          <div class="button-container">
+            <div class="generate-button1">
+              <button
+                class="generate-button-item"
+                id="rectangleButton"
+              ></button>
+              <h1 class="generate-content3" id="generateContentText">
+                Generate Content
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var formkitarrowleftIcon = document.getElementById("formkitarrowleftIcon");
+      if (formkitarrowleftIcon) {
+        formkitarrowleftIcon.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max2.html";
+        });
+      }
+      
+      var rectangleButton = document.getElementById("rectangleButton");
+      if (rectangleButton) {
+        rectangleButton.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max13.html";
+        });
+      }
+      
+      var generateContentText = document.getElementById("generateContentText");
+      
+      generateContentText.addEventListener("click", function (e) {
+  window.location.href = "./i-phone1415-pro-max11.html?mood=depressive";
+});
+      </script>
+  </body>
+</html>

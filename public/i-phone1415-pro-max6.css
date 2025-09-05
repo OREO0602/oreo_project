@@ -1,0 +1,212 @@
+.vector-icon4 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  width: 179px;
+  cursor: pointer;
+}
+.wistars-icon1 {
+  position: absolute;
+  top: 0;
+  left: 135px;
+  width: 109px;
+  height: 109px;
+  overflow: hidden;
+  z-index: 1;
+}
+.vector-container {
+  height: 185px;
+  width: 244px;
+  position: relative;
+}
+.frame-wrapper2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 29px;
+}
+.sleepwhisper1 {
+  align-self: stretch;
+  height: 81px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frame-parent3 {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  text-align: left;
+  font-size: 46px;
+  color: #f5f5f5;
+  font-family: Inter;
+}
+.vector-icon5 {
+  width: 668px;
+  height: 426px;
+  position: absolute;
+  margin: 0 !important;
+  top: 79px;
+  right: -83.5px;
+}
+.good-night {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.good-night-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 47px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.may-you-sleep {
+  width: 369px;
+  height: 134px;
+  position: relative;
+  font-size: 38px;
+  color: #fff;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.icbaseline-cloud,
+.iphone-14-15-pro-max-6 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.icbaseline-cloud {
+  margin-right: -126.5px;
+  width: 584.5px;
+  align-items: flex-start;
+  padding: 0 20px 225.5px 116px;
+  gap: 161px;
+  max-width: 177%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 48px;
+  color: #f5f5f5;
+  font-family: Inter;
+}
+.iphone-14-15-pro-max-6 {
+  width: 100%;
+  height: 932px;
+  background: linear-gradient(180deg, #e0d4f0, #8e88c4 75%);
+  align-items: flex-end;
+  padding: 119px 49px 515px;
+  gap: 49px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 354px) {
+  .good-night-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 352px) {
+  .frame-parent3 {
+    gap: 16px;
+  }
+}
+
+
+.iphone-14-15-pro-max-6 {
+  align-items: center !important;      
+  justify-content: center !important;  
+  padding: 0 !important;                 
+  height: 100vh;                        
+}
+
+
+.frame-parent3 {
+  align-items: center !important;
+  text-align: center;
+}
+
+
+.icbaseline-cloud {
+  align-items: center !important;
+  text-align: center;
+  margin-right: 0 !important; 
+  padding: 0 !important;
+  gap: 40px;                  
+}
+
+.icbaseline-cloud {
+  margin-right: 0 !important;
+  padding: 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 20px;
+}
+
+
+.vector-icon5 {
+  position: static !important;  
+  width: 300px;                 
+  height: auto;                  
+  margin-top: 10px;
+}
+
+.icbaseline-cloud {
+  position: relative !important;
+  margin-right: 0 !important;
+  padding: 40px 20px !important; 
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 20px;
+}
+
+
+.vector-icon5 {
+  position: absolute !important;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+
+.may-you-sleep,
+.good-night {
+  position: relative;
+  z-index: 1; 
+  text-align: center;
+}
+
+
+.start-button {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 12px 32px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  border: none;
+}
+

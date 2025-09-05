@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./i-phone1415-pro-max2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="iphone-14-15-pro-max-2">
+      <div class="please-choose-your">Please choose your mood</div>
+      <div class="mingcutehappy-line"></div>
+      <img
+        class="formkitarrowleft-icon2"
+        loading="lazy"
+        alt=""
+        src="./formkitarrowleft.svg"
+        id="formkitarrowleftIcon"
+      />
+
+      <section class="iphone-14-15-pro-max-2-inner">
+        
+
+        <div class="mood-selector-parent">
+  <div class="mood-selector">
+    <div class="emotion-item">
+      <img class="tdesignhappy-icon" loading="lazy" alt="" src="./tdesignhappy.svg" id="tdesignhappy" />
+      <div class="emotion-label">HAPPY</div>
+    </div>
+    <div class="emotion-item">
+      <img class="tdesignhappy-icon" loading="lazy" alt="" src="./tdesignemoemotional.svg" id="tdesignemoEmotional" />
+      <div class="emotion-label">PEACE</div>
+    </div>
+  </div>
+</div>
+      </section>
+      
+
+<section class="states">
+  <div class="state-container">
+    <div class="icons">
+      <div class="emotion-item">
+        <img
+          class="uilsad-icon"
+          loading="lazy"
+          alt=""
+          src="./uilsad@2x.png"
+          id="uilsadImage"
+        />
+        <!-- <div class="emotion-label">SAD</div> -->
+         <div class="emotion-label">SAD</div>
+      </div>
+     <div class="emotion-item shift-right">
+  <img
+    class="material-symbolssentiment-str-icon"
+    loading="lazy"
+    alt=""
+    src="./materialsymbolssentimentstressedoutline.svg"
+    id="materialSymbolssentimentStr"
+  />
+  <div class="emotion-label happy">DEPRESSIVE</div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+    </div>
+
+    <script>
+      var formkitarrowleftIcon = document.getElementById("formkitarrowleftIcon");
+      if (formkitarrowleftIcon) {
+        formkitarrowleftIcon.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max4.html";
+        });
+      }
+      
+     
+
+
+
+     document.getElementById("tdesignhappy").onclick = () => {
+  window.location.href = "./i-phone1415-pro-max7.html?mood=HAPPY";
+};
+
+document.getElementById("tdesignemoEmotional").onclick = () => {
+  window.location.href = "./i-phone1415-pro-max8.html?mood=PEACD";
+};
+
+document.getElementById("uilsadImage").onclick = () => {
+  window.location.href = "./i-phone1415-pro-max9.html?mood=SAD";
+};
+
+document.getElementById("materialSymbolssentimentStr").onclick = () => {
+  window.location.href = "./i-phone1415-pro-max10.html?mood=DEPRESSIVE";
+}; 
+
+
+
+      </script>
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.emotion-btn'); 
+    const outputArea = document.getElementById('gpt-output'); 
+
+    buttons.forEach(button => {
+      button.addEventListener('click', async () => {
+        const emotion = button.innerText; 
+
+        outputArea.innerText = 'Generating...';
+
+        try {
+          const res = await fetch('/api/gpt', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+             
+              userInput: `My current mood is: ${emotion}. Please comfort me gently in English, preferably with a story.`
+            })
+          });
+
+          const data = await res.json();
+          outputArea.innerText = data.reply || 'nothing return';
+        } catch (err) {
+          outputArea.innerText = 'error';
+          console.error(err);
+        }
+      });
+    });
+  });
+</script>
+
+
+  </body>
+</html>

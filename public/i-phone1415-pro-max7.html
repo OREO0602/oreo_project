@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./i-phone1415-pro-max7.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="iphone-14-15-pro-max-7">
+      <div class="formkitarrowleft-wrapper">
+        <img
+          class="formkitarrowleft-icon5"
+          loading="lazy"
+          alt=""
+          src="./formkitarrowleft.svg"
+          id="formkitarrowleftIcon"
+        />
+      </div>
+      <section class="tdesignhappy-wrapper">
+        <img
+          class="tdesignhappy-icon1"
+          loading="lazy"
+          alt=""
+          src="./tdesignhappy1.svg"
+        />
+      </section>
+      
+
+      <section class="iphone-14-15-pro-max-7-inner">
+  <textarea
+    class="mood-input-inner"
+    placeholder="Please enter your mood..."
+    rows="8"
+    cols="20"
+  ></textarea>
+</section>
+
+      
+      <div class="iphone-14-15-pro-max-7-child">
+        <div class="link-parent">
+          <button class="link" id="link"></button>
+          <h1 class="generate-content2" id="generateContentText">
+            Generate Content
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var formkitarrowleftIcon = document.getElementById("formkitarrowleftIcon");
+      if (formkitarrowleftIcon) {
+        formkitarrowleftIcon.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max2.html";
+        });
+      }
+      
+      var link = document.getElementById("link");
+      if (link) {
+        link.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max3.html";
+        });
+      }
+      
+      
+
+      var generateContentText = document.getElementById("generateContentText");
+if (generateContentText) {
+
+generateContentText.addEventListener("click", function (e) {
+  window.location.href = "./i-phone1415-pro-max3.html?mood=happy";
+});
+
+
+}
+      </script>
+
+  </body>
+</html>

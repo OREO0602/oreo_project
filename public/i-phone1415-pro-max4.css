@@ -1,0 +1,249 @@
+.formkitarrowleft-icon {
+  width: 32px;
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.iphone-pro-max {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 1px;
+}
+.vector-icon3 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  width: 179px;
+}
+.wistars-icon {
+  position: absolute;
+  top: 0;
+  left: 135px;
+  width: 109px;
+  height: 109px;
+  overflow: hidden;
+  z-index: 1;
+}
+.vector-group {
+  height: 185px;
+  flex: 1;
+  position: relative;
+}
+.frame-section {
+  width: 366px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 61px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.welcome-to-sleepwhisper {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.please-choose-wrapper,
+.welcome-to-sleepwhisper-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.welcome-to-sleepwhisper-wrapper {
+  padding: 0 0 10px;
+  font-size: 32px;
+}
+.please-choose-wrapper {
+  padding: 0 31px 0 30px;
+}
+.table-row-cells-child {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #c9c5ee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 28px;
+  width: 100%;
+  height: 100%;
+}
+.start-to-relax {
+  margin: 0;
+  position: absolute;
+  top: 32px;
+  left: 37px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  cursor: pointer;
+  z-index: 1;
+}
+.table-row-cells {
+  align-self: stretch;
+  height: 100px;
+  position: relative;
+  color: #625555;
+}
+.frame-div,
+.frame-parent2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent2 {
+  flex: 1;
+  flex-direction: column;
+  gap: 42px;
+}
+.frame-div {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 64px 0 65px;
+  color: #f5f5f5;
+}
+.rating-analysis {
+  margin: 0;
+  position: absolute;
+  top: 32px;
+  left: 37px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 217px;
+  cursor: pointer;
+  z-index: 1;
+}
+.rating-button-parent {
+  height: 100px;
+  flex: 1;
+  position: relative;
+}
+.frame-wrapper1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 64px 0 65px;
+  color: #625555;
+}
+.frame-container,
+.frame-parent1,
+.iphone-14-15-pro-max-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.frame-parent1 {
+  align-self: stretch;
+  align-items: center;       
+  gap: 58px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  font-family: Inter;
+}
+
+
+.frame-container,
+.iphone-14-15-pro-max-4 {
+  box-sizing: border-box;
+}
+
+
+
+.frame-container {
+  align-self: stretch;
+  align-items: center;         
+  text-align: center;         
+  padding: 0 1px 0 0;
+  gap: 67px;
+  max-width: 100%;
+}
+
+.iphone-14-15-pro-max-4 {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(224, 212, 240, 0.97),
+    rgba(142, 136, 196, 0.97) 75%
+  );
+  overflow: hidden;
+  align-items: flex-start;
+  padding: 31px 16px 102px;
+  gap: 78px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 396px) {
+  .frame-container {
+    gap: 33px;
+  }
+}
+@media screen and (max-width: 394px) {
+  .frame-div,
+  .frame-wrapper1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    
+  }
+  .frame-parent1 {
+    gap: 29px;
+  }
+}
+@media screen and (max-width: 354px) {
+  .frame-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 352px) {
+  .frame-parent2 {
+    gap: 21px;
+  }
+}
+
+
+.welcome-to-sleepwhisper-wrapper,
+.please-choose-wrapper {
+  justify-content: center;       
+}
+
+
+.table-row-cells,
+.rating-button-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.start-to-relax,
+.rating-analysis {
+  position: relative;  
+  top: auto;
+  left: auto;
+  margin: 0;
+  z-index: 1;        
+  text-align: center;
+}

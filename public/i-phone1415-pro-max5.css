@@ -1,0 +1,150 @@
+.formkitarrowleft-icon1 {
+  width: 32px;
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.relaxed-rating {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.rating-details { display: flex; flex-direction: row; align-items: flex-start; justify-content: flex-start; padding: 0 17px; }
+/* .etpiechart-icon { width: 220px; position: relative; max-height: 100%; overflow: hidden; flex-shrink: 0; } */
+.etpiechart-icon {
+  width: 90%;      
+  max-width: 700px;    
+  height: auto;        
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.mdidislike-icon, .mdilike-icon { position: absolute; top: 17px; left: 0; width: 14px; height: 14px; overflow: hidden; }
+.mdilike-icon { top: 0; left: 1px; }
+.interaction { width: 15px; height: 31px; position: relative; }
+.interaction-icons { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: 176px 0 0; }
+.like { margin: 0; }
+.like-dislike { position: relative; }
+.sentiment-label { flex-direction: column; padding: 173px 0 0; }
+.etpiechart-parent, .rating-details-parent, .sentiment-label { display: flex; align-items: flex-start; justify-content: flex-start; }
+.etpiechart-parent { flex-direction: row; gap: 7px; font-size: 14px; color: #625555; }
+.rating-details-parent { flex-direction: column; gap: 30px; }
+
+
+.mood-swings { height: 57px; width: 206px; position: absolute; margin: 0 !important; top: -31px; left: 52px; display: inline-block; }
+.mdichart-bar-icon { flex: 1; position: relative; max-width: 100%; overflow: hidden; max-height: 100%; z-index: 1; }
+.mood-bar { flex: 1; flex-direction: row; position: relative; max-width: 100%; display: flex; align-items: flex-start; justify-content: flex-start; }
+.mood-bar-wrapper { align-self: stretch; flex-direction: row; padding: 0 32px 0 40px; max-width: 100%; text-align: left; font-size: 28px; color: rgba(98, 85, 85, 0.8); font-family: Inter; display: flex; align-items: flex-start; justify-content: flex-start; }
+
+
+.iphone-14-15-pro-max-5 {
+  width: 100%;
+  position: relative;
+  background-color: #e0d4f0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 31px 17px 111px;
+  gap: 32px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: Inter;
+}
+
+
+
+
+.chart-row{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 16px 16px;
+  flex-wrap: wrap; 
+  
+}
+.left-pane, .right-pane{
+  flex: 1 1 0;
+  min-width: 320px;      
+}
+
+
+.iphone-14-15-pro-max-5-inner{
+  align-self: stretch;
+  display: block;   
+  padding: 0;      
+  text-align: left;
+  font-size: 28px;
+  color: rgba(98, 85, 85, 0.8);
+  font-family: Inter;
+}
+.interaction-icons{ padding: 8px 0 0; } 
+.sentiment-label{  padding: 6px 0 0; }  
+
+
+.etpiechart-icon{
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+}
+
+
+.right-pane .mood-bar-wrapper{ padding: 0; }
+.mood-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mdichart-bar-icon{ width: 100%; height: auto; }
+
+
+.mood-swings{
+  position: relative;
+  top: auto; left: auto;
+  margin: 0 0 16px 0;
+  width: auto; height: auto;
+}
+
+@media (max-width: 720px){
+  .chart-row{ gap: 24px; }
+}
+
+
+
+
+
+
+
+.left-pane,
+.right-pane{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+
+.etpiechart-icon,
+.mdichart-bar-icon{
+  width: 90% !important;       
+  max-width: 600px !important; 
+  height: auto !important;
+}
+
+
+.relaxed-rating,
+.mood-swings{
+  margin: 0 0 16px 0 !important;
+}
+
+
+.interaction-icons{ padding: 6px 0 0 !important; }
+.sentiment-label{  padding: 4px 0 0 !important; }
+

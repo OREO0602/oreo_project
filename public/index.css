@@ -1,0 +1,184 @@
+.vector-icon,
+.vector-icon1 {
+  position: absolute;
+  object-fit: cover;
+}
+.vector-icon {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  width: 179px;
+}
+.vector-icon1 {
+  top: 5.4px;
+  left: 154.5px;
+  width: 70px;
+  height: 69.4px;
+  z-index: 1;
+}
+.vector-parent {
+  height: 185px;
+  flex: 1;
+  position: relative;
+}
+.frame-wrapper {
+  width: 327px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 51px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.sleepwhisper {
+  margin: 0;
+  height: 81px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.sleepwhisper-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 23px;
+}
+.good-evening {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.are-you-ready {
+  margin: 0;
+}
+.good-evening-are-container {
+  align-self: stretch;
+  position: relative;
+  font-size: 30px;
+  color: #fff;
+}
+.frame-group,
+.frame-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3.5px;
+  
+  
+}
+/* .frame-parent {
+  align-items: flex-end;
+  gap: 26px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 46px;
+  color: #f5f5f5;
+  font-family: Inter;
+} */
+
+.frame-parent {
+  align-items: center; /* 原来是 flex-end，改为 center */
+  gap: 26px;
+  max-width: 100%;
+  text-align: center; /* 让文字也居中 */
+  font-size: 46px;
+  color: #f5f5f5;
+  font-family: Inter;
+}
+
+.vector-icon2 {
+  width: 676.2px;
+  height: 431.2px;
+  position: absolute;
+  margin: 0 !important;
+  /* right: -166.1px; */
+  left: 29%;
+  bottom: -25.2px;
+  object-fit: cover;
+}
+
+.frame-child,
+.start {
+  position: absolute;
+  cursor: pointer;
+}
+.frame-child {
+  top: 0;
+  left: 0;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.start {
+  margin: 0;
+  top: 21.3px;
+  /* left: 84.1px; */
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 102px;
+  z-index: 2;
+}
+.rectangle-parent {
+  width: 300px;         /* 控制白色矩形宽度，调整至合适范围 */
+  height: 80px;
+  position: absolute;
+  bottom: 160px;         /* 保持与云朵之间的间距 */
+  left: 50%;             /* 先移到屏幕中心 */
+  transform: translateX(-50%); /* 再水平居中 */
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.iphone-14-15-pro-max-1-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 32px 0 35px;
+  text-align: left;
+  font-size: 32px;
+  color: #665959;
+  font-family: Inter;
+}
+.iphone-14-15-pro-max-1 {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(180deg, #e0d4f0, #8e88c4 75.48%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 129px 46px 163.9px;
+  box-sizing: border-box;
+  gap: 193px;
+  line-height: normal;
+  letter-spacing: normal;
+
+  
+}
+@media screen and (max-width: 352px) {
+  .frame-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}

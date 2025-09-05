@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./i-phone1415-pro-max11.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="iphone-14-15-pro-max-11">
+      <img
+        class="formkitarrowleft-icon9"
+        loading="lazy"
+        alt=""
+        src="./formkitarrowleft.svg"
+        id="formkitarrowleftIcon"
+      />
+
+      <section class="content-container">
+        <div class="content-column">
+          <div class="sleep-whispering-frame">
+            <h1 class="sleep-whispering2">Sleep Whispering</h1>
+          </div>
+          <div class="content1">
+            <div class="content-child"></div>
+           
+
+<div id="gpt-output" style="margin-top: 20px; font-size: 16px; line-height: 1.6; padding: 12px; background: #f3f3f3; border-radius: 10px;">
+  Generating...
+</div>
+
+
+          </div>
+          <div class="action-buttons">
+            <div class="feedback">
+              <img
+                class="mdilike-icon3"
+                loading="lazy"
+                alt=""
+                src="./mdilike1.svg"
+                id="mdilike"
+              />
+
+              <div class="material-symbolsnot-started-r-container">
+                <img
+                  class="material-symbolsnot-started-r-icon2"
+                  loading="lazy"
+                  alt=""
+                  src="./materialsymbolsnotstartedrounded.svg"
+                />
+              </div>
+              <img
+                class="mdilike-icon3"
+                loading="lazy"
+                alt=""
+                src="./mdidislike1.svg"
+                id="mdidislike"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="actions-icons-wrapper">
+        <div class="actions-icons">
+          <button class="end-background" id="endBackground"></button>
+          <h2 class="end3" id="eNDText">END</h2>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var formkitarrowleftIcon = document.getElementById("formkitarrowleftIcon");
+      if (formkitarrowleftIcon) {
+        formkitarrowleftIcon.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max8.html";
+        });
+      }
+      
+      var mdilike = document.getElementById("mdilike");
+      if (mdilike) {
+        mdilike.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max14.html";
+        });
+      }
+      
+      var mdidislike = document.getElementById("mdidislike");
+      if (mdidislike) {
+        mdidislike.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max16.html";
+        });
+      }
+      
+      var endBackground = document.getElementById("endBackground");
+      if (endBackground) {
+        endBackground.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max6.html";
+        });
+      }
+      
+      var eNDText = document.getElementById("eNDText");
+      if (eNDText) {
+        eNDText.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max6.html";
+        });
+      }
+      </script>
+
+
+
+<script>
+  
+  function getMoodFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("mood");
+  }
+
+
+  async function fetchGPTResponse(mood) {
+    const output = document.getElementById("gpt-output");
+    if (!output) return;
+
+    output.innerText = "Generating...";
+
+    try {
+      const res = await fetch("/api/gpt", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+        
+          userInput: `I'm feeling very ${mood}. Please comfort me gently in English, preferably in the form of a short story.`
+        })
+      });
+
+      const data = await res.json();
+      output.innerText = data.reply || "nothing return";
+    } catch (error) {
+      output.innerText = "error";
+      console.error(error);
+    }
+  }
+
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const mood = getMoodFromURL();
+    if (mood) {
+      fetchGPTResponse(mood);
+    } else {
+      const output = document.getElementById("gpt-output");
+      if (output) output.innerText = "No emotional parameters provided";
+    }
+  });
+</script>
+
+
+
+
+  </body>
+</html>

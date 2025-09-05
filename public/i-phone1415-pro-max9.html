@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./i-phone1415-pro-max9.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="iphone-14-15-pro-max-9">
+      <img
+        class="formkitarrowleft-icon4"
+        loading="lazy"
+        alt=""
+        src="./formkitarrowleft.svg"
+        id="formkitarrowleftIcon"
+      />
+
+      <section class="uilsad-container">
+        <img
+          class="uilsad-icon1"
+          loading="lazy"
+          alt=""
+          src="./uilsad1@2x.png"
+        />
+      </section>
+      
+      <section class="iphone-14-15-pro-max-9-inner">
+  <textarea
+    class="mood-input-inner"
+    placeholder="Please enter your mood..."
+    rows="8"
+    cols="20"
+  ></textarea>
+</section>
+      
+      <div class="generate-button-wrapper">
+        <div class="generate-button">
+          <button class="generate-button-child" id="rectangleButton"></button>
+          <h1 class="generate-content1" id="generateContentText">
+            Generate Content
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var formkitarrowleftIcon = document.getElementById("formkitarrowleftIcon");
+      if (formkitarrowleftIcon) {
+        formkitarrowleftIcon.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max2.html";
+        });
+      }
+      
+      var rectangleButton = document.getElementById("rectangleButton");
+      if (rectangleButton) {
+        rectangleButton.addEventListener("click", function (e) {
+          window.location.href = "./i-phone1415-pro-max12.html";
+        });
+      }
+      
+      var generateContentText = document.getElementById("generateContentText");
+     
+generateContentText.addEventListener("click", function (e) {
+  window.location.href = "./i-phone1415-pro-max11.html?mood=sad";
+});
+
+      </script>
+  </body>
+</html>

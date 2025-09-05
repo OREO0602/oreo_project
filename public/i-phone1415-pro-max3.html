@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+     <script>
+    if (performance.navigation.type === 1) {
+      location.reload(true); 
+    }
+  </script>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./i-phone1415-pro-max3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  </head>
+  <body>
+    <div class="iphone-14-15-pro-max-11">
+      <img
+        class="formkitarrowleft-icon9"
+        loading="lazy"
+        alt=""
+        src="./formkitarrowleft.svg"
+        id="formkitarrowleftIcon"
+      />
+
+      <section class="content-container">
+        <div class="content-column">
+          <div class="sleep-whispering-frame">
+            <h1 class="sleep-whispering2">Sleep Whispering</h1>
+          </div>
+          <div class="content1">
+            <div class="content-child"></div>
+            <div id="gpt-output" style="margin-top: 20px; font-size: 16px; line-height: 1.6; padding: 12px; background: #f3f3f3; border-radius: 10px;">
+              Generating...
+            </div>
+          </div>
+          <div class="action-buttons">
+            <div class="feedback">
+              <img
+                class="mdilike-icon3"
+                loading="lazy"
+                alt=""
+                src="./mdilike1.svg"
+                id="mdilike"
+              />
+              <div class="material-symbolsnot-started-r-container">
+                <img
+                  class="material-symbolsnot-started-r-icon2"
+                  loading="lazy"
+                  alt=""
+                  src="./materialsymbolsnotstartedrounded.svg"
+                />
+              </div>
+              <img
+                class="mdilike-icon3"
+                loading="lazy"
+                alt=""
+                src="./mdidislike1.svg"
+                id="mdidislike"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="actions-icons-wrapper">
+        <div class="actions-icons">
+          <button class="end-background" id="endBackground"></button>
+          <h2 class="end3" id="eNDText">END</h2>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("formkitarrowleftIcon")?.addEventListener("click", () => {
+        window.location.href = "./i-phone1415-pro-max7.html";
+      });
+      document.getElementById("mdilike")?.addEventListener("click", () => {
+        window.location.href = "./i-phone1415-pro-max14.html";
+      });
+      document.getElementById("mdidislike")?.addEventListener("click", () => {
+        window.location.href = "./i-phone1415-pro-max16.html";
+      });
+      document.getElementById("endBackground")?.addEventListener("click", () => {
+        window.location.href = "./i-phone1415-pro-max6.html";
+      });
+      document.getElementById("eNDText")?.addEventListener("click", () => {
+        window.location.href = "./i-phone1415-pro-max6.html";
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const mood = new URLSearchParams(window.location.search).get("mood");
+        const output = document.getElementById("gpt-output");
+        if (!mood) {
+          output.innerText = "No emotional parameters provided";
+          return;
+        }
+        output.innerText = "Generating...";
+        fetch("/api/gpt", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            userInput: `I'm feeling very ${mood}. Please comfort me gently in English, preferably in the form of a short story.`,
+          }),
+        })
+          .then((res) => res.json())
+          .then((data) => (output.innerText = data.reply || "nothing return"))
+          .catch((err) => {
+            output.innerText = "error";
+            console.error(err);
+          });
+      });
+    </script>
+  </body>
+</html>

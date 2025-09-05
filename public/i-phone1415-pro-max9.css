@@ -1,0 +1,141 @@
+.formkitarrowleft-icon4,
+.uilsad-icon1 {
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+}
+.formkitarrowleft-icon4 {
+  width: 32px;
+  cursor: pointer;
+}
+.uilsad-icon1 {
+  width: 127.4px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.uilsad-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 21px 0 20px;
+}
+.frame-item {
+  height: 306px;
+  width: 346px;
+  position: relative;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none;
+  max-width: 100%;
+}
+.please-enter-your1 {
+  height: 42px;
+  width: 277px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.iphone-14-15-pro-max-9-inner,
+.rectangle-group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rectangle-group {
+  flex: 1;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 39px 26px;
+}
+.iphone-14-15-pro-max-9-inner {
+  height: 306px;
+  padding: 0 25px;
+  text-align: left;
+  font-size: 22px;
+  color: rgba(98, 85, 85, 0.8);
+  font-family: Inter;
+}
+.generate-button-child {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #9992d8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 36px;
+  width: 100%;
+  height: 100%;
+}
+.generate-content1 {
+  margin: 0;
+  
+  
+  
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  cursor: pointer;
+  z-index: 1;
+}
+.generate-button {
+  height: 74px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.generate-button-wrapper,
+.iphone-14-15-pro-max-9 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.generate-button-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 29px;
+  max-width: 100%;
+}
+.iphone-14-15-pro-max-9 {
+  width: 100%;
+  position: relative;
+  background-color: #e0d4f0;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 31px 17px 150px;
+  gap: 75.2px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 26px;
+  color: #fff;
+  font-family: Inter;
+}
+
+.mood-input-inner {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 306px;
+  width: 100%;
+  outline: 0;
+  border-radius: 24px;
+  padding: 39px 26px;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-size: 22px;
+  color: rgba(98, 85, 85, 0.8);
+  resize: none;
+}
+
